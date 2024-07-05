@@ -1,0 +1,39 @@
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Uso de aplicacion</h4>
+        <h5 class="card-subtitle text-muted">Uso actual</h5>
+        <div class="bg-info p-3 rounded" style="background-color: #1E8F8E !important;">
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 class="text-white">Horas de uso app</h6>
+                    <h3 class="text-white mb-0">141 HS</h3>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-white">Este mes</h6>
+                    <h3 class="text-white mb-0">25 HS</h3>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-white">Esta semana</h6>
+                    <h3 class="text-white mb-0">3 HS</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <!-- column -->
+            <div class="col-lg-12">
+                <div>
+                    <div class="d-flex flex-column w-100">
+                        <apx-chart [series]="salesChartOptions.series" [chart]="salesChartOptions.chart" [plotOptions]="salesChartOptions.plotOptions"
+                            [xaxis]="salesChartOptions.xaxis" [yaxis]="salesChartOptions.yaxis"
+                            [grid]="salesChartOptions.grid" [stroke]="salesChartOptions.stroke"
+                            [tooltip]="salesChartOptions.tooltip" [dataLabels]="salesChartOptions.dataLabels"
+                            [legend]="salesChartOptions.legend" [colors]="salesChartOptions.colors"
+                            [markers]="salesChartOptions.markers">
+                        </apx-chart>
+                    </div>
+                </div>
+            </div>
+            <!-- column -->
+        </div>
+    </div>
+</div>

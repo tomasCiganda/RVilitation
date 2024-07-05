@@ -1,0 +1,47 @@
+<div class="card">
+    <div class="card-body">
+        <!-- title -->
+                <h4 class="card-title">Mis Pacientes</h4>
+                <h5 class="card-subtitle">Progreso de tus pacientes</h5>
+            
+        <!-- title -->
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th class="text-dark font-medium fs-4">Paciente</th>
+                        <th class="text-dark font-medium fs-4">Condición</th>
+                        <th class="text-dark font-medium fs-4">Dificultad Actual</th>
+                        <th class="text-dark font-medium fs-4">Comentarios</th>
+                        <th class="text-dark font-medium fs-4">Tiempo por nivel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let ts of topSelling'>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img [src]=ts.image alt="user" width="45" class="rounded-circle">
+                                <div class="ms-3">
+                                    <h5 class="mb-0 font-medium">{{ts.uname}}</h5>
+                                    <span class="text-muted">{{ts.gmail}}</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="fs-4">{{ts.injury}}</td>
+                        <td>
+                            <h5 class="mb-0 fw-normal">{{ts.status}}</h5>
+                        </td>
+                        
+                        <td>
+                            <h5 class="mb-0 fw-normal">{{ts.weeks}}</h5>
+                        </td>
+                        <td>
+                            <h5 class="mb-0 fw-normal">{{ts.hours}}</h5>
+                        </td>
+                    </tr>              
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+</div>
