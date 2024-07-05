@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "admin-pro-angular-lite": {
+    "RehaVR": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -21,7 +21,7 @@
               "ng-apexcharts",
               "apexcharts"
             ],
-            "outputPath": "dist/admin-pro-angular-lite",
+            "outputPath": "dist/RehaVR",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -70,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "admin-pro-angular-lite:build:production"
+              "browserTarget": "RehaVR:build:production"
             },
             "development": {
-              "browserTarget": "admin-pro-angular-lite:build:development"
+              "browserTarget": "RehaVR:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "admin-pro-angular-lite:build"
+            "browserTarget": "RehaVR:build"
           }
         },
         "test": {
