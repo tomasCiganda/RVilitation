@@ -5,6 +5,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { NgApexchartsModule } from "ng-apexcharts";
 import { DashboardComponent } from "./dashboard.component";
 import { SalesRatioComponent } from "./dashboard-components/sales-ratio/sales-ratio.component";
+import { ProgressionComponent } from "./dashboard-components/progression/progression.component";
 import { FeedsComponent } from "./dashboard-components/feeds/feeds.component";
 import { TopSellingComponent } from "./dashboard-components/top-selling/top-selling.component";
 import { TopCardsComponent } from "./dashboard-components/top-cards/top-cards.component";
@@ -33,6 +34,7 @@ const routes: Routes = [
   declarations: [
     DashboardComponent,
     SalesRatioComponent,
+    ProgressionComponent,
     FeedsComponent,
     TopSellingComponent,
     TopCardsComponent,
